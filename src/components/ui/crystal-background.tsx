@@ -6,8 +6,9 @@ export function CrystalBackground() {
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
+    const ctxRaw = canvas.getContext('2d')
+    if (!ctxRaw) return
+    const ctx: CanvasRenderingContext2D = ctxRaw
 
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
