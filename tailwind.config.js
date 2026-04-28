@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Neue Haas Grotesk"', '"Inter"', 'system-ui', 'sans-serif'],
-        display: ['"Neue Haas Grotesk"', '"Inter"', 'system-ui', 'sans-serif'],
+        display: ['"Syne"', '"Inter"', 'system-ui', 'sans-serif'],
       },
       colors: {
         ink: '#000000',

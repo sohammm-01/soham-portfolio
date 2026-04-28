@@ -11,7 +11,7 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="text-display-md md:text-display-lg font-medium tracking-tight leading-[1.0] text-balance mb-16">
+          <h2 className="text-display-md md:text-display-lg font-display font-extrabold tracking-tight leading-[1.0] text-balance mb-16">
             Start a project?{' '}
             <a
               href={`mailto:${contact.email}`}
@@ -30,13 +30,6 @@ export function Contact() {
               className="text-xl md:text-2xl font-medium tracking-tight link-underline hover:opacity-80"
             >
               {contact.email}
-            </a>
-            <p className="eyebrow mt-8 mb-3">PHONE</p>
-            <a
-              href={`tel:${contact.phone.replace(/\s/g, '')}`}
-              className="text-xl md:text-2xl font-medium tracking-tight link-underline hover:opacity-80"
-            >
-              {contact.phone}
             </a>
           </Reveal>
 

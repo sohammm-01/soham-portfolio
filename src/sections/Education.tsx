@@ -1,5 +1,5 @@
 import { Reveal } from '@/components/Reveal'
-import { education } from '@/data/content'
+import { education, seeking } from '@/data/content'
 
 export function Education() {
   return (
@@ -21,12 +21,29 @@ export function Education() {
 
           <div className="md:col-span-9">
             <Reveal delay={0.1}>
-              <h3 className="text-2xl md:text-4xl font-medium tracking-tight leading-[1.15] text-balance">
+              <h3 className="text-2xl md:text-4xl font-display font-extrabold tracking-tight leading-[1.15] text-balance">
                 {education.institution}
               </h3>
             </Reveal>
             <Reveal delay={0.15}>
               <p className="mt-3 text-muted text-base md:text-lg">{education.degree}</p>
+            </Reveal>
+          </div>
+        </div>
+
+        {/* What I'm Looking For */}
+        <div className="mt-24 md:mt-32 border-t border-subtle pt-10">
+          <Reveal>
+            <p className="eyebrow mb-8">{seeking.eyebrow}</p>
+          </Reveal>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
+            <Reveal className="md:col-span-9" delay={0.1}>
+              <p className="text-2xl md:text-3xl font-display font-extrabold tracking-tight leading-[1.25] text-balance mb-6">
+                {seeking.headline}
+              </p>
+              <p className="text-muted text-base md:text-lg leading-relaxed max-w-2xl">
+                {seeking.details}
+              </p>
             </Reveal>
           </div>
         </div>
