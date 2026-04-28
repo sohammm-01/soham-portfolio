@@ -28,7 +28,7 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
 
       {/* title */}
       <Reveal delay={0.05}>
-        <h3 className="text-4xl md:text-6xl lg:text-7xl font-display font-semibold tracking-tight leading-[1.0] mb-4 text-balance">
+        <h3 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal tracking-tight leading-[1.0] mb-4 text-balance">
           {project.title}
         </h3>
       </Reveal>
@@ -90,7 +90,7 @@ export function ProjectsCarousel() {
 
         <Reveal>
           <p className="eyebrow mb-3">SELECTED WORK</p>
-          <h2 className="text-display-md font-display font-semibold tracking-tight mb-20 md:mb-28">projects</h2>
+          <h2 className="text-display-md font-display font-normal tracking-tight mb-20 md:mb-28">projects</h2>
         </Reveal>
 
         <div>

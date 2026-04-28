@@ -53,7 +53,7 @@ export function Hero({ introDone, landingActive, onNavClick }: HeroProps) {
         </motion.div>
 
         <motion.h1
-          className="text-display-md md:text-display-lg font-display font-semibold tracking-tight text-balance"
+          className="text-display-md md:text-display-lg font-display font-normal tracking-tight text-balance"
           initial={{ opacity: 0, y: 24 }}
           animate={introDone ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}

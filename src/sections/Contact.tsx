@@ -11,7 +11,7 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="text-display-md md:text-display-lg font-display font-semibold tracking-tight leading-[1.0] text-balance mb-16">
+          <h2 className="text-display-md md:text-display-lg font-display font-normal tracking-tight leading-[1.0] text-balance mb-16">
             Start a project?{' '}
             <a
               href={`mailto:${contact.email}`}

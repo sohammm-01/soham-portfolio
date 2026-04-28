@@ -21,7 +21,7 @@ export function Education() {
 
           <div className="md:col-span-9">
             <Reveal delay={0.1}>
-              <h3 className="text-2xl md:text-4xl font-display font-semibold tracking-tight leading-[1.15] text-balance">
+              <h3 className="text-2xl md:text-4xl font-display font-normal tracking-tight leading-[1.15] text-balance">
                 {education.institution}
               </h3>
             </Reveal>
@@ -38,7 +38,7 @@ export function Education() {
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-10">
             <Reveal className="md:col-span-9" delay={0.1}>
-              <p className="text-2xl md:text-3xl font-display font-semibold tracking-tight leading-[1.25] text-balance mb-6">
+              <p className="text-2xl md:text-3xl font-display font-normal tracking-tight leading-[1.25] text-balance mb-6">
                 {seeking.headline}
               </p>
               <p className="text-muted text-base md:text-lg leading-relaxed max-w-2xl">
