@@ -3,9 +3,9 @@ import { projects, type Project, type ProjectStatus } from '@/data/content'
 import { ArrowUpRight } from 'lucide-react'
 
 const statusConfig: Record<ProjectStatus, { dot: string; label: string }> = {
-  live:     { dot: 'bg-emerald-400', label: 'text-emerald-400' },
-  progress: { dot: 'bg-sky-400',     label: 'text-sky-400'     },
-  shipped:  { dot: 'bg-white/60',    label: 'text-white/60'    },
+  live: { dot: 'bg-emerald-400', label: 'text-emerald-400' },
+  progress: { dot: 'bg-sky-400', label: 'text-sky-400' },
+  shipped: { dot: 'bg-white/60', label: 'text-white/60' },
 }
 
 function ProjectRow({ project, index }: { project: Project; index: number }) {
@@ -13,7 +13,6 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
 
   return (
     <div className="border-t border-subtle py-16 md:py-20">
-      {/* index + status */}
       <Reveal>
         <div className="flex items-center justify-between mb-7">
           <span className="font-mono text-xs tracking-[0.2em] text-muted">
@@ -26,21 +25,18 @@ function ProjectRow({ project, index }: { project: Project; index: number }) {
         </div>
       </Reveal>
 
-      {/* title */}
       <Reveal delay={0.05}>
         <h3 className="text-4xl md:text-6xl lg:text-7xl font-display font-normal tracking-tight leading-[1.0] mb-4 text-balance">
           {project.title}
         </h3>
       </Reveal>
 
-      {/* highlight */}
       <Reveal delay={0.1}>
         <p className="text-xs tracking-[0.14em] uppercase text-muted mb-12">
           {project.highlight}
         </p>
       </Reveal>
 
-      {/* description + stack + links */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
         <Reveal className="md:col-span-7" delay={0.12}>
           <p className="text-base md:text-lg text-muted leading-relaxed">
@@ -87,7 +83,6 @@ export function ProjectsCarousel() {
   return (
     <section id="projects" className="relative py-24 md:py-32">
       <div className="container-pad max-w-7xl mx-auto">
-
         <Reveal>
           <p className="eyebrow mb-3">SELECTED WORK</p>
           <h2 className="text-display-md font-display font-normal tracking-tight mb-20 md:mb-28">projects</h2>

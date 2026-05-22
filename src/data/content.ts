@@ -1,9 +1,9 @@
 export const profile = {
   name: 'Soham',
   tagline: 'I Turn Problems Into Products',
-  heroSubtext: 'Product Manager · Builder · Data-Driven Thinker',
+  heroSubtext: 'Product Manager / Builder / Data-Driven Thinker',
   heroBody:
-    "Hi, I'm Soham. I shipped a live POS system, solo, from idea to deployment, while studying full-time. Now I'm looking for a team where I can bring that same ownership to product.",
+    "Hi, I'm Soham. I'm building CURA, a desktop AI assistant that quietly tracks email and calendar context, notices hidden tasks and deadlines, and shows the one thing worth doing next.",
   location: 'Manipal, India',
   availability: 'AVAILABLE\nFOR WORK\nFULL TIME',
 }
@@ -11,8 +11,8 @@ export const profile = {
 export const about = {
   eyebrow: 'A FEW THINGS ABOUT ME',
   body:
-    "I shipped a fully-featured POS system, solo, from zero to live deployment, while studying full-time. I'm a final-year Electronics Engineering student at MIT Manipal with a strong lean toward product management: structured thinking, user empathy, and hands-on execution. I don't just plan products. I build them.",
-  footnote: 'Open to PM & APM roles · 2026 grad',
+    "I build products for messy real-world workflows. Right now, that's CURA: a local-first desktop AI assistant for people who feel scattered, built to surface the one thing worth doing next instead of handing them another inbox to manage. I also shipped Bill It, a fully-featured POS system running live at a restaurant in Manipal. I'm a final-year Electronics Engineering student at MIT Manipal with a strong lean toward product management: structured thinking, user empathy, and hands-on execution.",
+  footnote: 'Open to PM & APM roles / 2026 grad',
 }
 
 export const skills = [
@@ -43,6 +43,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    title: 'CURA: Desktop AI Assistant',
+    status: 'progress',
+    statusLabel: 'In Progress',
+    highlight: 'A local-first assistant that notices what matters before you have to remember it.',
+    description:
+      'CURA is a desktop AI assistant that quietly keeps track of your life. It reads your email and calendar in the background, picks up the tasks, deadlines, and follow-ups hiding in messages, and tells you the one thing worth doing next. Everything lives on your own machine, and it stays out of your way until it has something useful to say.',
+    stack: ['Tauri', 'React', 'TypeScript', 'SQLite', 'Email & Calendar APIs'],
+    links: [{ label: 'Documentation', href: 'https://cura-docs-swart.vercel.app/#/' }],
+  },
   {
     title: 'Bill It: POS for Indian Restaurants',
     status: 'live',
@@ -83,7 +93,7 @@ export const projects: Project[] = [
 export const education = {
   institution: 'Manipal Institute of Technology, MAHE',
   degree: 'B.Tech in Electronics & Instrumentation Engineering',
-  duration: '2022 — 2026',
+  duration: '2022 - 2026',
   location: 'Manipal, Karnataka',
 }
 
@@ -98,7 +108,7 @@ export const contact = {
 
 export const seeking = {
   eyebrow: "WHAT I'M LOOKING FOR",
-  headline: "A product team where I can own problems end to end: not just write specs, but ship solutions.",
+  headline: 'A product team where I can own problems end to end: not just write specs, but ship solutions.',
   details:
     "I'm a 2026 grad open to PM and APM roles at companies building products that touch real users. I care most about teams that move fast, value data, and trust junior hires to take real ownership from day one.",
 }
